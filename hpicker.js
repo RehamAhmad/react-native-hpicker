@@ -257,7 +257,7 @@ class HorizontalPicker extends Component {
     return (
       <TouchableWithoutFeedback key={itemValue} onPress={v => this.handleItemPress(v)}>
         <View style={[styles.itemContainer, {width: this.getItemWidth()}]}>
-          <Text style={[styles.itemText, child.props.style, {color}]}>{child.props.label}</Text>
+          <Text style={[styles.itemText, {color}, child.props.style]}>{child.props.label}</Text>
         </View>
       </TouchableWithoutFeedback>
     );
