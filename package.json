@@ -1,6 +1,6 @@
 {
   "name": "react-native-horizontal-picker-q5",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Horizontally scrolling picker component for React Native",
   "main": "hpicker.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mkko/react-native-hpicker.git"
+    "url": "git+https://github.com/quantfive/react-native-hpicker.git"
   },
   "author": "Mikko Välimäki",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mkko/react-native-hpicker/issues"
+    "url": "https://github.com/quantfive/react-native-hpickerissues"
   },
-  "homepage": "https://github.com/mkko/react-native-hpicker#readme",
+  "homepage": "https://github.com/quantfive/react-native-hpicker#readme",
   "keywords": [
     "react-native",
     "picker"
