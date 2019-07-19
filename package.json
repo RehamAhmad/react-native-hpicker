@@ -1,6 +1,6 @@
 {
   "name": "react-native-horizontal-picker-q5",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Horizontally scrolling picker component for React Native",
   "main": "hpicker.js",
   "scripts": {
