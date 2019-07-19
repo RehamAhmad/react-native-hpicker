@@ -105,7 +105,13 @@ class HorizontalPicker extends Component {
   }
 
   componentDidMount() {
-    this.scrollToValue(this.props.selectedValue, false);
+    if (Platform.OS === 'android') {
+      setTimeout(() => {
+        this.scrollToValue(this.props.selectedValue, true);
+      }, 200)
+    } else {
+      this.scrollToValue(this.props.selectedValue, true); 
+    }
   }
 
   getItemWidth = () => this.props.itemWidth && this.props.itemWidth > 0
