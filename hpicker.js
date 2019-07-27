@@ -105,13 +105,9 @@ class HorizontalPicker extends Component {
   }
 
   componentDidMount() {
-    if (Platform.OS === 'android') {
-      setTimeout(() => {
-        this.scrollToValue(this.props.selectedValue, true);
-      }, 200)
-    } else {
-      this.scrollToValue(this.props.selectedValue, true); 
-    }
+    setTimeout(() => {
+      this.scrollToValue(this.props.selectedValue, true);
+    }, 200)
   }
 
   getItemWidth = () => this.props.itemWidth && this.props.itemWidth > 0
@@ -158,7 +154,7 @@ class HorizontalPicker extends Component {
     // Make sure the component hasn't been unmounted
     if (this.refs.scrollview) {
       log('scroll ->', snapX);
-      this.refs.scrollview.scrollTo({x: snapX, y: 0, animated});
+      this.refs.scrollview.scrollTo({x: snapX, y: 0, animated: false});
 
       // iOS fix
       if (!initial && Platform.OS === 'ios') {
