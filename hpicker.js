@@ -261,6 +261,8 @@ class HorizontalPicker extends Component {
         <View style={[styles.itemContainer, {width: this.getItemWidth()}]}>
           <Text style={[styles.itemText, {color}, child.props.style]}>{child.props.label}</Text>
           <Text style={[styles.itemText, {color}, child.props.style,child.props.styleLabel2]}>{child.props.label2}</Text>
+          <View style={{marginTop:14}} />
+          <Text style={[styles.itemText, {color}, child.props.style,child.props.styleLabel3]}>{child.props.label3}</Text>
         </View>
       </TouchableWithoutFeedback>
     );
